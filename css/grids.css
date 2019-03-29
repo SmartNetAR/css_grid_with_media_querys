@@ -1,0 +1,80 @@
+/* GLOBAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box; /* esto asegura que el relleno y el borde están incluidos en el ancho total y la altura de los elementos */
+}
+
+.container {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+.row {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    clear: both; /* para que no se suba a la fila superior */
+    display: table; /* para que lo que sigue abajo no continúe en esta fila y se respete el espacio sobrante y para que el contenido de las cajas flotantes le sumen altura */
+}
+
+[class*= "col-"] {
+    float: left; /*p ara que no se muestre debajo del elemento anteior */
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-11 {
+    width: 91.6666667%;
+}
+
+.col-10 {
+    width: 83.33333333%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-8 {
+    width: 66.66666667%;
+}
+
+.col-7 {
+    width: 58.33333333%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-5 {
+    width: 41.6666667%;
+}
+
+.col-4 {
+    width: 33.33333333%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-2 {
+    width: 16.66666667%;
+}
+
+.col-1 {
+    width: 8.33333333%;
+}
